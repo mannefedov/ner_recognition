@@ -22,7 +22,7 @@ def createParser ():
 if __name__ == '__main__':
     parser = createParser()
     namespace = parser.parse_args(sys.argv[1:])
-    input_path = namespace.input + '/'* (not namespace.input.endswith('/'))
+    input_path = namespace.input + '/'* ((not namespace.input.endswith('/')) and (not namespace.input.endswith('\\')) )
     result_path = namespace.output
     if not os.path.exists(result_path):
         os.makedirs(result_path)
