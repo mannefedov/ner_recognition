@@ -7,6 +7,31 @@ from pymystem3 import Mystem
 m = Mystem()
 
 
+
+dict_descriptors_LOC = Use.open_dictionary("dict_descriptors_LOC")
+dict_descriptors_ORG = Use.open_dictionary("dict_descriptors_ORG")
+dict_descriptors_ORG_PER = Use.open_dictionary("dict_descriptors_ORG_PER")
+dict_PER_NAMES_popular = Use.open_dictionary("dict_PER_NAMES_popular")
+dict_LOC = Use.open_dictionary("dict_LOC")
+dict_LocOrg = Use.open_dictionary("dict_LocOrg")
+dict_PER_NAME = Use.open_dictionary("dict_PER_NAME")
+dict_PER_SURNAME = Use.open_dictionary("dict_PER_SURNAME")
+dict_PER_PATRONYMIC = Use.open_dictionary("dict_PER_PATRONYMIC")
+dict_identificators_LOC = Use.open_dictionary("dict_identificators_LOC")
+dict_identificators_PER = Use.open_dictionary("dict_identificators_PER")
+
+dict_suffixes_ORG = Use.open_dictionary("dict_suffixes_ORG")
+dict_parts_PERSON = Use.open_dictionary("dict_parts_PERSON")
+dict_ADJ_GEO = Use.open_dictionary("dict_ADJ_GEO")
+dict_NAMES_chinese = Use.open_dictionary("dict_NAMES_chinese")
+dict_suffixes_PERSON = Use.open_dictionary("dict_suffixes_PERSON")
+dict_parts_ORG = Use.open_dictionary("dict_parts_ORG")
+dict_VERBS_SPEECH = Use.open_dictionary("dict_VERBS_SPEECH")
+dict_PERSON = Use.open_dictionary("dict_PERSON")
+
+
+
+
 def create_indexed_text(user_text, start_position = 0):
     """Функция возвращает проиндексированный текст.
     Args:
@@ -20,8 +45,8 @@ def create_indexed_text(user_text, start_position = 0):
         [3](str): "тип" - word/punct/whitespace
 
     """
-    punct = set([' ', ',', '.', '\n', ':', '?', '!', ';', '—', '(', ')','[',']','«','»','…','"',"'"])
-    whitespace = set([' ','\n','\t'])
+    punct = set([' ', ',', '.', ':', '?', '!', ';', '—', '(', ')','[',']','«','»','…','"',"'", '>', '^','$','%', '<','=','/','\'','|'])
+    whitespace = set([' ','\n'])
     indexed_text = []
     in_word = False
     current_index = start_position
@@ -236,7 +261,7 @@ def is_in_dictionary(indexed_text, dict_name='dict_PER_NAME', label='dict=PER'):
     :param label: аннотация, которую мы добавляем к токену;
     :return: возвращает индексированный текст
     """
-    dictionary = Use.open_dictionary(dict_name)
+    dictionary = dict_name
     for token in indexed_text:
         if token['token_type'] != 'punct' and token['token_type'] != 'whitespace' and len(token['token']) > 1:
             if token['lemma'] in dictionary:
@@ -267,7 +292,7 @@ def geo_adjectives(indexed_text):
 
 
 def contains_suffix(indexed_text, dict_name):
-    dictionary = Use.open_dictionary(dict_name)
+    dictionary = dict_name
     for line in indexed_text:
         count = 0
         if line[3] != 'punct':
@@ -287,8 +312,9 @@ def no_whitespaces(indexed_text):
             result.append(token)
     return result
 
-def suffix(text, dict_name='dict_suffixes_PERSON', label='suffix=PERSON'):
-    d = Use.open_dictionary(dict_name)
+
+def suffix(text, dict_name=dict_suffixes_PERSON, label='suffix=PERSON'):
+    d = dict_name
     for token in text:
         for suffix in d:
             if token['lemma'].endswith(suffix) and token['shape'] == 'capitalized':
@@ -296,8 +322,8 @@ def suffix(text, dict_name='dict_suffixes_PERSON', label='suffix=PERSON'):
     return text
 
 
-def parts(text, dict_name='dict_parts_ORG', label='part=ORG'):
-    d = Use.open_dictionary(dict_name)
+def parts(text, dict_name=dict_parts_ORG, label='part=ORG'):
+    d = dict_name
     for token in text:
         for part in d:
             if part in token['lemma'] and token['shape'] != 'lower':
@@ -305,15 +331,15 @@ def parts(text, dict_name='dict_parts_ORG', label='part=ORG'):
     return text
 
 
-def verb_of_speech(text, dict_name='dict_VERBS_SPEECH', label='speech_verb'):
-    d = Use.open_dictionary(dict_name)
+def verb_of_speech(text, dict_name=dict_VERBS_SPEECH, label='speech_verb'):
+    d = dict_name
     for token in text:
         if token['lemma'] in d:
             token['dict'].append(label)
     return text
 
 def chinese_name(text):
-    d = Use.open_dictionary('dict_NAMES_chinese')
+    d = dict_NAMES_chinese
     for token in text:
         if token['token'].lower() in d:
             token['dict'].append("asian_name")
@@ -322,6 +348,7 @@ def chinese_name(text):
 def pipeline(filename):
 
     text = Use.open_file(filename)
+    print("Предобработка текста...")
     # индексируем
     text = create_indexed_text(text)
     text = delete_whitespaces(text)
@@ -333,48 +360,49 @@ def pipeline(filename):
     text = initialize_dict(text)
 
     # дескрипторы
-    text = is_in_dictionary(text, dict_name='dict_descriptors_LOC', label='descr=LOC')
-    text = is_in_dictionary(text, dict_name='dict_descriptors_ORG', label='descr=ORG')
-    text = is_in_dictionary(text, dict_name='dict_descriptors_ORG_PER', label='descr=ORG_PER')
-    text = is_in_dictionary(text, dict_name='dict_LOC', label='LOC')
-    text = is_in_dictionary(text, dict_name="dict_LocOrg", label="LocOrg")
+    print("Поиск в словарях...")
+    text = is_in_dictionary(text, dict_name=dict_descriptors_LOC, label='descr=LOC')
+    text = is_in_dictionary(text, dict_name=dict_descriptors_ORG, label='descr=ORG')
+    text = is_in_dictionary(text, dict_name=dict_descriptors_ORG_PER, label='descr=ORG_PER')
+    text = is_in_dictionary(text, dict_name=dict_LOC, label='LOC')
+    text = is_in_dictionary(text, dict_name=dict_LocOrg, label="LocOrg")
 
-    text = is_in_dictionary(text, dict_name='dict_PER_NAMES_popular', label='popular_name')
+    text = is_in_dictionary(text, dict_name=dict_PER_NAMES_popular, label='popular_name')
 
 
     # Имя, фамилия, отчество
-    text = is_in_dictionary(text, dict_name='dict_PER_NAME', label='dict=PER_NAME')
-    text = is_in_dictionary(text, dict_name='dict_PER_SURNAME', label='dict=PER_SURNAME')
-    text = is_in_dictionary(text, dict_name='dict_PER_PATRONYMIC', label='patronymic')
+    text = is_in_dictionary(text, dict_name=dict_PER_NAME, label='dict=PER_NAME')
+    text = is_in_dictionary(text, dict_name=dict_PER_SURNAME, label='dict=PER_SURNAME')
+    text = is_in_dictionary(text, dict_name=dict_PER_PATRONYMIC, label='patronymic')
 
     # Размечаем
-    text = is_in_dictionary(text, dict_name='dict_identificators_LOC', label='ident=LOC')
-    text = is_in_dictionary(text, dict_name='dict_identificators_PER', label='ident=PER')
+    text = is_in_dictionary(text, dict_name=dict_identificators_LOC, label='ident=LOC')
+    text = is_in_dictionary(text, dict_name=dict_identificators_PER, label='ident=PER')
     text = identificator(text)
     text = chinese_name(text)
 
     text = suffix(text)
-    text = suffix(text, dict_name='dict_suffixes_ORG', label='suffix=ORG')
+    text = suffix(text, dict_name=dict_suffixes_ORG, label='suffix=ORG')
     text = parts(text)
-    text = parts(text, dict_name='dict_parts_PERSON', label='part=PER')
+    text = parts(text, dict_name=dict_parts_PERSON, label='part=PER')
     text = verb_of_speech(text)
 
 
     # Геоприлагательные
     text = analyze(text)
     text = geo_adjectives(text)
-    text = is_in_dictionary(text,dict_name="dict_ADJ_GEO", label="GEO_ADJ")
+    text = is_in_dictionary(text,dict_name=dict_ADJ_GEO, label="GEO_ADJ")
 
     # Коллокации
+    print("Поиск коллокаций...")
     text = Ng.search_all_collocations(text)
     text = Ng.search_all_collocations(text, dict_name="dict_LOC", label="LOC")
     text = Ng.search_all_collocations(text, dict_name="dict_PERSON", label="PER")
 
-    text = Ng.search_collocations(text, dict_name="dict_LocOrg", n=2, label="LocOrg")
-    text = Ng.search_collocations(text, dict_name="dict_LocOrg", n=3, label="LocOrg")
+    # text = Ng.search_collocations(text, dict_name="dict_LocOrg", n=2, label="LocOrg")
+    # text = Ng.search_collocations(text, dict_name="dict_LocOrg", n=3, label="LocOrg")
 
-    Use.write_in_file(text, filename + '_features')
-
+    # Use.write_in_file(text, filename + '_features')
 
     return text
 

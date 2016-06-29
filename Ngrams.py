@@ -109,12 +109,12 @@ def partial_search(text, collocation, label="collocation", rule="partial_search_
 
 
 def search_all_collocations(text, dict_name="dict_ORG", label="ORG"):
-    text = search_collocations(text, n=1, dict_name=dict_name + '_1', label=label)
-    text = search_collocations(text, n=2, dict_name=dict_name + '_2', label=label)
-    text = search_collocations(text, n=3, dict_name=dict_name + '_3', label=label)
-    text = search_collocations(text, n=4, dict_name=dict_name + '_4', label=label)
-    text = search_collocations(text, n=5, dict_name=dict_name + '_5', label=label)
-    text = search_collocations(text, n=6, dict_name=dict_name + '_6', label=label)
+    text = search_collocations(text, n=1, dict_name=dict_name, label=label)
+    text = search_collocations(text, n=2, dict_name=dict_name, label=label)
+    text = search_collocations(text, n=3, dict_name=dict_name, label=label)
+    # text = search_collocations(text, n=4, dict_name=dict_name, label=label)
+    # text = search_collocations(text, n=5, dict_name=dict_name, label=label)
+    # text = search_collocations(text, n=6, dict_name=dict_name, label=label)
     # text = search_collocations(text, n=8, dict_name=dict_name + '_6', label=label)
     # text = search_collocations(text, n=9, dict_name=dict_name + '_6', label=label)
 

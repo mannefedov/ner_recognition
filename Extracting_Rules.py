@@ -623,6 +623,7 @@ def sud(text):
 
 
 def pipeline(text):
+    print("Извлечение сущностей... ")
     # text = Use.open_json(filename, path)
     text = initialize_annotation(text)
     text = in_quotes(text, n=5)
@@ -642,7 +643,7 @@ def pipeline(text):
     text = person_name_surname(text)
     text = person_by_dict(text)
     text = person_partial_search(text)
-    text = loc_by_dict(text)
+    # text = loc_by_dict(text)
     text = loc_sea(text)
     text = loc_by_descriptor(text)
     text = loc_by_mystem(text)

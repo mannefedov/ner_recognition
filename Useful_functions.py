@@ -2,6 +2,7 @@
 import codecs
 import os
 import json
+import re
 
 
 def open_file(filename):
@@ -12,6 +13,9 @@ def open_file(filename):
     """
     fh = codecs.open(filename + '.txt', 'r', encoding='utf-8')
     fh = fh.read()
+    fh = fh.replace("^", " ")
+    fh = fh.replace("\\", " ")
+    fh = fh.replace("&", " ")
     fh += '\n.'
     return fh
 
@@ -23,9 +27,10 @@ def open_dictionary(filename):
     :return: список строк словаря
     """
     cwd = os.getcwd()
-    path = '/Users/ulyanasidorova/Documents/UPD — копия 2/dictionaries'
+
+    path = "/Users/ulyanasidorova/Documents/NER_repository/dictionaries"
     os.chdir(path)
-    fh = codecs.open(filename + '.txt', 'r', encoding='utf-8')
+    fh = codecs.open(filename + ".txt", 'r', encoding='utf-8')
     imported_dictionary = []
     for line in fh:
         line = line.strip()
@@ -35,9 +40,10 @@ def open_dictionary(filename):
     return imported_dictionary
 
 
-def write_in_file(text, filename, separator=' ', path='/Users/ulyanasidorova/Documents/UPD — копия 2'):
-    os.chdir(path)
+def write_in_file(text, filename, separator=' ', path="/Users/ulyanasidorova/Downloads/XXX/raw"):
     f = open(filename + '.txt', 'w', encoding='utf-8')
+    cwd = os.getcwd()
+    os.chdir(path)
     for token in text:
         array = []
         for key in token:
@@ -45,6 +51,7 @@ def write_in_file(text, filename, separator=' ', path='/Users/ulyanasidorova/Doc
         f.write(separator.join(array))
         f.write('\n')
     f.close()
+    os.chdir(cwd)
     # print('-----------------------------------')
     # print('Content is in file: ' + filename + '.txt.')
     # print('-----------------------------------')
@@ -70,8 +77,8 @@ def write_as_object(text, filename, path):
     for line in text:
         f.write(line + '\n')
     print("===================")
-    print("Content is in file: " + filename + ".txt.")
-    print("File is in directory: " + path + ".")
+    print("Извлеченные сущности находятся в файле: " + filename + ".txt.")
+    print("Файл находится в папке: " + path + ".")
     print("===================")
     os.chdir(pwd)
     return True
