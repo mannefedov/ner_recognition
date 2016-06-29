@@ -11,7 +11,7 @@ def open_file(filename):
     :param filename: имя файла с расширением
     :return: строка, содержащая полный исходный текст
     """
-    fh = codecs.open(filename + '.txt', 'r', encoding='utf-8')
+    fh = codecs.open(filename, 'r', encoding='utf-8')
     fh = fh.read()
     fh = fh.replace("^", " ")
     fh = fh.replace("\\", " ")
@@ -26,10 +26,13 @@ def open_dictionary(filename):
     :param filename: имя файла с расширением
     :return: список строк словаря
     """
-    cwd = os.getcwd()
 
-    path = "/Users/ulyanasidorova/Documents/NER_repository/dictionaries"
+    cwd = os.getcwd()
+    path = "./dictionaries"
+    if 'testset' in cwd:
+        path = "../dictionaries"
     os.chdir(path)
+    #print(os.getcwd())
     fh = codecs.open(filename + ".txt", 'r', encoding='utf-8')
     imported_dictionary = []
     for line in fh:
@@ -40,7 +43,7 @@ def open_dictionary(filename):
     return imported_dictionary
 
 
-def write_in_file(text, filename, separator=' ', path="/Users/ulyanasidorova/Downloads/XXX/raw"):
+def write_in_file(text, filename, separator=' ', path="./raw"):
     f = open(filename + '.txt', 'w', encoding='utf-8')
     cwd = os.getcwd()
     os.chdir(path)
@@ -73,11 +76,11 @@ def write_in_file(text, filename, separator=' ', path="/Users/ulyanasidorova/Dow
 def write_as_object(text, filename, path):
     pwd = os.getcwd()
     os.chdir(path)
-    f = open(filename + ".txt", 'w', encoding='utf-8')
+    f = open(filename, 'w', encoding='utf-8')
     for line in text:
         f.write(line + '\n')
     print("===================")
-    print("Извлеченные сущности находятся в файле: " + filename + ".txt.")
+    print("Извлеченные сущности находятся в файле: " + filename)
     print("Файл находится в папке: " + path + ".")
     print("===================")
     os.chdir(pwd)

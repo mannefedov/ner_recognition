@@ -380,7 +380,7 @@ def pipeline(filename):
     text = is_in_dictionary(text, dict_name=dict_identificators_PER, label='ident=PER')
     text = identificator(text)
     text = chinese_name(text)
-
+    
     text = suffix(text)
     text = suffix(text, dict_name=dict_suffixes_ORG, label='suffix=ORG')
     text = parts(text)

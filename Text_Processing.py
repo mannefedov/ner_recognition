@@ -4,34 +4,34 @@ import Basic_Features as Bf
 import Extracting_Rules as Rules
 import Useful_functions as Use
 import Json_Handler as Jh
+from os.path import basename
 
 # Путь, где лежит коллекция текстов для соревнований
-os.chdir('/Users/ulyanasidorova/Downloads/factRuEval-2016-master/testset')
+input_path = './testset/'
 
 # Папка с результатами
-path = '/Users/ulyanasidorova/Downloads/factRuEval-2016-master/testset/temp'
+result_path = './result/'
 try:
-    os.mkdir(path)
+    os.mkdir(result_path)
 except FileExistsError:
     pass
 
-files = os.listdir(os.getcwd())
+files = [input_path+file for file in  os.listdir(input_path)]
 
 for filename in sorted(files):
     try:
         if filename.endswith(".txt"):
             f = codecs.open(filename, 'r')
-            filename = filename.split('.')[0]
-            print("Обрабатывается файл", filename)
+            #filename = filename.split('.')[0]
+            print("Обрабатывается файл", basename(filename))
             text = Bf.pipeline(filename)
-
             text = Rules.pipeline(text)
 
             result = Jh.formatting(text)
             for line in result:
                 print(line)
 
-            Use.write_as_object(result, filename, path=path)
+            Use.write_as_object(result, basename(filename), path=result_path)
     except FileNotFoundError as err:
         print("Skipping 1 file", filename)
         pass
