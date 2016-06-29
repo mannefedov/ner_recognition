@@ -1,0 +1,245 @@
+none cyrillic capitalized 0 ['dict=PER_SURNAME', 'ident=PER', 'ident=PER'] S,муж,од=им,мн адвокат 8 Адвокаты none word
+none cyrillic lower 9 [] S,жен,неод=род,мн жертва 5 жертв none word
+none cyrillic lower 15 [] S,жен,неод=(вин,мн|род,ед|им,мн) афера 5 аферы none word
+none cyrillic capitalized 21 ['dict=PER_SURNAME', 'suffix=PERSON'] S,фам,муж,од=(вин,ед|род,ед) мейдофф 8 Мейдоффа none word
+none cyrillic lower 30 [] V,несов,пе=непрош,мн,изъяв,3-л требовать 7 требуют none word
+none cyrillic lower 38 [] V,пе=инф,сов созывать 7 созвать none word
+none cyrillic lower 46 ['GEO_ADJ'] A=(вин,ед,полн,муж,неод|им,ед,полн,муж) международный 13 международный none word
+none cyrillic lower 60 [] S,муж,неод=(вин,ед|им,ед) трибунал 8 трибунал none word
+none cyrillic capitalized 70 ['dict=PER_SURNAME', 'ident=PER', 'ident=PER'] S,муж,од=им,мн адвокат 8 Адвокаты none word
+none none none 78 [] none none 1 , none punct
+none cyrillic lower 80 [] V,пе=(непрош,им,мн,прич,полн,несов,действ|непрош,вин,мн,прич,полн,несов,действ,неод) представлять 14 представляющие none word
+none cyrillic lower 95 [] A=(пр,мн,полн|вин,мн,полн,од|род,мн,полн) юридический 11 юридических none word
+none cyrillic lower 107 ['asian_name'] CONJ= и 1 и none word
+none cyrillic lower 109 [] A=(пр,мн,полн|вин,мн,полн,од|род,мн,полн) физический 10 физических none word
+none cyrillic lower 120 [] S,сред,неод=род,мн лицо 3 лиц none word
+none none none 123 [] none none 1 , none punct
+none cyrillic lower 125 [] APRO=(им,мн|вин,мн,неод) который 7 которые none word
+none cyrillic lower 133 [] V,сов,нп=прош,мн,изъяв пострадать 10 пострадали none word
+none cyrillic lower 144 ['LOC'] PR= от 2 от none word
+none cyrillic lower 147 [] A=(пр,ед,полн,жен|дат,ед,полн,жен|род,ед,полн,жен|твор,ед,полн,жен) финансовый 10 финансовой none word
+none cyrillic lower 158 ['LOC'] S,жен,неод=(вин,мн|род,ед|им,мн) пирамида 8 пирамиды none word
+none cyrillic lower 167 [] A,полн=(вин,ед,муж,од|род,ед,муж|род,ед,сред) бывший 7 бывшего none word
+none cyrillic lower 175 ['LOC', 'ident=PER', 'ident=PER'] S,жен,неод=(вин,мн|род,ед|им,мн) глава 5 главы none word
+none latin capitalized 181 [] none Nasdaq 6 Nasdaq none word
+none cyrillic capitalized 188 ['popular_name', 'dict=PER_NAME', 'dict=PER_SURNAME', 'PER_B'] S,имя,муж,од=(вин,ед|род,ед) бернард 8 Бернарда none word
+none cyrillic capitalized 197 ['dict=PER_SURNAME', 'suffix=PERSON'] S,фам,муж,од=(вин,ед|род,ед) мейдофф 8 Мейдоффа none word
+none none none 205 [] none none 1 , none punct
+none cyrillic lower 207 [] V,пе=прош,мн,изъяв,сов призывать 8 призвали none word
+none cyrillic lower 216 [] V,пе=инф,сов созывать 7 созвать none word
+none cyrillic lower 224 ['GEO_ADJ'] A=(вин,ед,полн,муж,неод|им,ед,полн,муж) международный 13 международный none word
+none cyrillic lower 238 [] S,муж,неод=(вин,ед|им,ед) трибунал 8 трибунал none word
+none cyrillic lower 247 [] PR= для 3 для none word
+none cyrillic lower 251 [] S,сред,неод=(вин,мн|род,ед|им,мн) расследование 13 расследования none word
+none cyrillic lower 265 [] S,сред,неод=род,мн злоупотребление 15 злоупотреблений none word
+none none none 280 [] none none 1 , none punct
+none cyrillic lower 282 [] V,пе=непрош,ед,изъяв,3-л,несов передавать 8 передает none word
+none cyrillic lower 291 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) в 1 в none word
+none cyrillic lower 293 ['dict=PER_SURNAME'] S,муж,неод=(вин,ед|им,ед) понедельник 11 понедельник none word
+none latin capitalized 305 [] none Agence 6 Agence none word
+none latin mixed 312 [] none France-Presse 13 France-Presse contains_hyphen word
+none none none 325 [] none none 1 . none punct
+none none none 328 [] none none 1 " none punct
+none cyrillic capitalized 329 [] S,муж,неод=(вин,ед|им,ед) масштаб 7 Масштаб none word
+none cyrillic lower 337 [] S,сред,неод=(вин,мн|род,ед|им,мн) мошенничество 13 мошенничества none word
+none cyrillic capitalized 351 ['dict=PER_SURNAME', 'suffix=PERSON'] S,фам,муж,од=(вин,ед|род,ед) мейдофф 8 Мейдоффа none word
+none none none 359 [] none none 1 , none punct
+none cyrillic lower 361 [] S,жен,неод=им,ед география 9 география none word
+none cyrillic lower 371 ['asian_name'] CONJ= и 1 и none word
+none cyrillic lower 373 [] S,сред,неод=(вин,ед|им,ед) количество 10 количество none word
+none cyrillic lower 384 [] S,муж,од=(пр,мн|вин,мн|род,мн) пострадавший 12 пострадавших none word
+none cyrillic lower 397 ['descr=ORG'] S,жен,неод=род,мн компания 8 компаний none word
+none cyrillic lower 406 ['asian_name'] CONJ= и 1 и none word
+none cyrillic lower 408 [] A=(пр,мн,полн|вин,мн,полн,од|род,мн,полн) частный 7 частных none word
+none cyrillic lower 416 [] S,сред,неод=род,мн лицо 3 лиц none word
+none cyrillic lower 420 [] V,несов,нп=непрош,мн,изъяв,3-л свидетельствовать 15 свидетельствуют none word
+none cyrillic lower 436 ['asian_name'] INTJ= о 1 о none word
+none cyrillic lower 438 [] S,жен,неод=(пр,ед|вин,мн|дат,ед|род,ед|им,мн) необходимость 13 необходимости none word
+none cyrillic lower 452 [] S,сред,неод=(вин,мн|род,ед|им,мн) учреждение 10 учреждения none word
+none cyrillic lower 463 ['GEO_ADJ'] A=(вин,ед,полн,муж,од|род,ед,полн,муж|род,ед,полн,сред) международный 14 международного none word
+none cyrillic lower 478 [] A=(вин,ед,полн,муж,од|род,ед,полн,муж|род,ед,полн,сред) финансовый 11 финансового none word
+none cyrillic lower 490 [] S,муж,неод=род,ед трибунал 9 трибунала none word
+none none none 499 [] none none 1 , none punct
+none cyrillic lower 501 [] CONJ= чтобы 5 чтобы none word
+none cyrillic lower 507 [] V,пе=(инф,несов|инф,сов) расследовать 12 расследовать none word
+none cyrillic lower 520 [] S,жен,неод=(пр,ед|вин,мн|дат,ед|род,ед|им,мн) махинация 9 махинации none word
+none none none 529 [] none none 1 " none punct
+none none none 530 [] none none 1 , none punct
+none cyrillic none 532 [] none - 1 - contains_hyphen word
+none cyrillic lower 534 ['speech_verb'] V,пе=прош,ед,изъяв,муж,сов заявлять 6 заявил none word
+none cyrillic lower 541 [] A=(вин,ед,полн,муж,неод|им,ед,полн,муж) испанский 9 испанский none word
+none cyrillic lower 551 ['dict=PER_SURNAME', 'ident=PER', 'ident=PER'] S,муж,од=им,ед адвокат 7 адвокат none word
+none cyrillic capitalized 559 ['LOC', 'dict=PER_NAME', 'PER_B'] S,имя,муж,од=им,ед хавьер 6 Хавьер none word
+none cyrillic capitalized 566 ['part=PER'] S,имя,муж,од=им,ед кремадес 8 Кремадес none word
+none none none 575 [] none none 1 ( none punct
+none latin capitalized 576 [] none Javier 6 Javier none word
+none latin capitalized 583 [] none Cremades 8 Cremades none word
+none none none 591 [] none none 1 ) none punct
+none none none 592 [] none none 1 . none punct
+none cyrillic capitalized 594 ['LOC'] SPRO,ед,3-л,муж=им он 2 Он none word
+none cyrillic lower 597 [] V,несов,нп=прош,ед,изъяв,муж председательствовать 19 председательствовал none word
+none cyrillic lower 617 ['asian_name'] PR= на 2 на none word
+none cyrillic lower 620 [] S,сред,неод=пр,ед заседание 9 заседании none word
+none cyrillic lower 630 [] S,муж,неод=род,ед альянс 7 альянса none word
+is_digit cyrillic none 638 [] none 45 2 45 none word
+none cyrillic lower 641 [] A=(пр,мн,полн|вин,мн,полн,од|род,мн,полн) юридический 11 юридических none word
+none cyrillic lower 653 [] S,жен,неод=род,мн фирма 4 фирм none word
+none none none 657 [] none none 1 , none punct
+none cyrillic lower 659 [] APRO=(им,мн|вин,мн,неод) который 7 которые none word
+none cyrillic lower 667 [] V,пе=непрош,мн,изъяв,3-л,несов представлять 12 представляют none word
+none cyrillic lower 680 [] S,муж,неод=(вин,мн|им,мн) интерес 8 интересы none word
+none cyrillic lower 689 [] ADV= около 5 около none word
+is_digit cyrillic none 695 [] none 10 2 10 none word
+none cyrillic lower 698 [] S,жен,неод=род,мн тысяча 5 тысяч none word
+none cyrillic lower 704 [] S,муж,од=(вин,мн|род,мн) клиент 8 клиентов none word
+none cyrillic lower 713 ['descr=ORG'] S,муж,неод=род,ед фонд 5 фонда none word
+none none none 718 [] none none 1 . none punct
+none cyrillic capitalized 721 ['LOC', 'asian_name'] PR= по 2 По none word
+none cyrillic lower 724 [] S,сред,неод=дат,мн слово 6 словам none word
+none cyrillic capitalized 731 ['part=PER'] S,имя,муж,од=(вин,ед|род,ед) кремадес 9 Кремадеса none word
+none none none 740 [] none none 1 , none punct
+none cyrillic lower 742 [] S,муж,неод=(вин,ед|им,ед) альянс 6 альянс none word
+none cyrillic lower 749 [] V,нп=непрош,ед,изъяв,3-л быть 5 будет none word
+none cyrillic lower 755 [] V,пе=(инф,несов|инф,сов) лоббировать 11 лоббировать none word
+none cyrillic lower 767 ['LOC', 'popular_name'] S,жен,неод=вин,ед идея 4 идею none word
+none cyrillic lower 772 [] S,сред,неод=(вин,мн|род,ед|им,мн) создание 8 создания none word
+none cyrillic lower 781 ['GEO_ADJ'] A=(вин,ед,полн,муж,од|род,ед,полн,муж|род,ед,полн,сред) международный 14 международного none word
+none cyrillic lower 796 [] S,муж,неод=род,ед трибунал 9 трибунала none word
+none cyrillic lower 806 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) в 1 в none word
+none cyrillic lower 808 ['LocOrg'] S,сред,неод=пр,мн правительство 14 правительствах none word
+none cyrillic lower 823 [] S,жен,неод=род,мн страна 5 стран none word
+none none none 829 [] none none 1 " none punct
+none cyrillic capitalized 830 ['LOC', 'ORG_B'] A=(вин,ед,полн,муж,неод|им,ед,полн,муж|пр,ед,полн,жен|дат,ед,полн,жен|род,ед,полн,жен|твор,ед,полн,жен) большой 7 Большой none word
+none cyrillic lower 838 ['ORG_I'] S,жен,неод=(вин,мн|род,ед|им,мн) двадцатка 9 двадцатки none word
+none none none 847 [] none none 1 " none punct
+none none none 848 [] none none 1 , none punct
+none cyrillic lower 850 ['ident=PER', 'ident=PER'] S,муж,од=им,мн представитель 13 представители none word
+none cyrillic lower 864 [] APRO=(пр,мн|род,мн|вин,мн,од) который 7 которых none word
+none cyrillic lower 872 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) в 1 в none word
+none cyrillic lower 874 [] S,муж,неод=пр,ед апрель 6 апреле none word
+none cyrillic lower 881 [] V,нп=непрош,мн,изъяв,3-л,сов собираться 9 соберутся none word
+none cyrillic lower 891 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) в 1 в none word
+none cyrillic capitalized 893 ['LOC', 'dict=PER_NAME', 'dict=PER_SURNAME', 'LOC_B'] S,гео,муж,неод=пр,ед лондон 7 Лондоне none word
+none none none 900 [] none none 1 . none punct
+none cyrillic capitalized 903 [] PR= между 5 Между none word
+none cyrillic lower 909 ['LOC'] SPRO,ед,сред,неод=твор то 3 тем none word
+none none none 912 [] none none 1 , none punct
+none cyrillic lower 914 [] V,пе=непрош,ед,изъяв,3-л,несов напоминать 10 напоминает none word
+none cyrillic lower 925 ['descr=ORG'] S,сред,неод=(вин,ед|им,ед) агентство 9 агентство none word
+none none none 934 [] none none 1 , none punct
+none cyrillic lower 936 [] V,несов,нп=непрош,ед,изъяв,3-л ожидаться 9 ожидается none word
+none none none 945 [] none none 1 , none punct
+none cyrillic lower 947 [] SPRO,ед,сред,неод=(вин|им) что 3 что none word
+none cyrillic lower 951 [] ADV= уже 3 уже none word
+none cyrillic lower 955 ['LOC', 'asian_name'] PART= во 2 во none word
+none cyrillic lower 958 [] S,муж,неод=(вин,ед|им,ед) вторник 7 вторник none word
+contains_digits cyrillic lower 966 [] none 70-летний 9 70-летний contains_hyphen word
+none cyrillic capitalized 976 ['dict=PER_SURNAME', 'suffix=PERSON'] S,фам,муж,од=им,ед мейдофф 7 Мейдофф none word
+none cyrillic lower 984 [] V,пе=(непрош,ед,изъяв,3-л,несов|непрош,ед,изъяв,3-л,сов) признавать 8 признает none word
+none cyrillic lower 993 [] SPRO=(вин|род) себя 4 себя none word
+none cyrillic lower 998 [] S,муж,од=(дат,мн|твор,ед) виновный 8 виновным none word
+none cyrillic lower 1007 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) в 1 в none word
+none cyrillic lower 1009 [] S,жен,неод=пр,мн махинация 10 махинациях none word
+none none none 1019 [] none none 1 . none punct
+none cyrillic capitalized 1021 [] SPRO,ед,сред,неод=(вин|им) это 3 Это none word
+none cyrillic lower 1025 [] V,пе=непрош,ед,изъяв,3-л,сов позволять 8 позволит none word
+none cyrillic lower 1034 ['LOC'] SPRO,ед,3-л,муж=дат он 3 ему none word
+none cyrillic lower 1038 [] V,сов,нп=инф пойти 5 пойти none word
+none cyrillic lower 1044 ['asian_name'] PR= на 2 на none word
+none cyrillic lower 1047 [] S,жен,неод=вин,ед сделка 6 сделку none word
+none cyrillic lower 1054 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) с 1 с none word
+none cyrillic lower 1056 [] S,сред,неод=твор,ед правосудие 11 правосудием none word
+none cyrillic lower 1068 ['asian_name'] CONJ= и 1 и none word
+none cyrillic lower 1070 [] V,нп=инф,сов избегать 8 избежать none word
+none cyrillic lower 1079 [] A=(вин,ед,полн,муж,од|род,ед,полн,муж|род,ед,полн,сред) судебный 9 судебного none word
+none cyrillic lower 1089 [] S,сред,неод=(вин,мн|род,ед|им,мн) разбирательство 15 разбирательства none word
+none none none 1104 [] none none 1 , none punct
+none cyrillic lower 1106 ['asian_name'] CONJ= и 1 и none word
+none cyrillic lower 1108 [] S,муж,неод=(вин,ед|им,ед) суд 3 суд none word
+none cyrillic lower 1112 [] V,пе=непрош,ед,изъяв,3-л,сов переходить 8 перейдет none word
+none cyrillic lower 1121 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) к 1 к none word
+none cyrillic lower 1123 [] S,сред,неод=дат,ед вынесение 9 вынесению none word
+none cyrillic lower 1133 [] S,муж,неод=род,ед приговор 9 приговора none word
+none none none 1142 [] none none 1 . none punct
+none cyrillic capitalized 1144 ['LOC'] APRO=(дат,ед,муж|дат,ед,сред) сам 6 Самому none word
+none cyrillic lower 1151 ['ident=PER', 'ident=PER'] S,муж,од=дат,ед финансист 10 финансисту none word
+none cyrillic lower 1162 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) в 1 в none word
+none cyrillic lower 1164 [] APRO=(пр,ед,муж|пр,ед,сред) любой 5 любом none word
+none cyrillic lower 1170 [] S,муж,неод=пр,ед случай 6 случае none word
+none cyrillic lower 1177 [] V,несов,нп=непрош,ед,изъяв,3-л грозить 6 грозит none word
+none cyrillic lower 1184 [] A=(вин,ед,полн,муж,неод|им,ед,полн,муж) длительный 10 длительный none word
+none cyrillic lower 1195 [] A=(вин,ед,полн,муж,неод|им,ед,полн,муж) тюремный 8 тюремный none word
+none cyrillic lower 1204 [] S,муж,неод=(вин,ед|им,ед) срок 4 срок none word
+none cyrillic lower 1209 ['asian_name'] CONJ= и 1 и none word
+none cyrillic lower 1211 [] A=(вин,ед,полн,муж,неод|им,ед,полн,муж) крупный 7 крупный none word
+none cyrillic lower 1219 [] S,муж,неод=(вин,ед|им,ед) штраф 5 штраф none word
+none none none 1224 [] none none 1 , none punct
+none cyrillic lower 1226 [] CONJ= однако 6 однако none word
+none cyrillic lower 1233 [] PR= благодаря 9 благодаря none word
+none cyrillic lower 1243 [] S,жен,неод=(пр,ед|дат,ед) сделка 6 сделке none word
+none cyrillic lower 1250 ['LOC'] SPRO,ед,3-л,муж=им он 2 он none word
+none cyrillic lower 1253 [] V,сов,нп=непрош,ед,изъяв,3-л смочь 6 сможет none word
+none cyrillic lower 1260 [] V,пе=инф,сов защищать 8 защитить none word
+none cyrillic lower 1269 ['LOC'] PR= от 2 от none word
+none cyrillic lower 1272 [] S,сред,неод=(вин,мн|род,ед|им,мн) преследование 13 преследования none word
+none cyrillic lower 1286 [] APRO=(пр,мн|род,мн|вин,мн,од) свой 5 своих none word
+none cyrillic lower 1292 [] S,муж,од=(вин,мн|род,мн) родственник 13 родственников none word
+none none none 1305 [] none none 1 , none punct
+none cyrillic lower 1307 ['speech_verb'] V,пе=непрош,мн,изъяв,3-л,несов полагать 8 полагают none word
+none cyrillic lower 1316 ['ident=PER', 'ident=PER'] S,муж,од=им,мн наблюдатель 11 наблюдатели none word
+none none none 1327 [] none none 1 . none punct
+none cyrillic capitalized 1330 ['dict=PER_SURNAME', 'suffix=PERSON'] S,фам,муж,од=им,ед мейдофф 7 Мейдофф none word
+none cyrillic lower 1338 [] V,нп=прош,ед,изъяв,муж,несов быть 3 был none word
+none cyrillic lower 1342 [] V=прош,ед,прич,кр,муж,сов,страд арестовывать 9 арестован none word
+none cyrillic lower 1352 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) в 1 в none word
+none cyrillic lower 1354 [] S,муж,неод=пр,ед декабрь 7 декабре none word
+is_digit cyrillic mixed 1362 [] none 2008 4 2008 none word
+none cyrillic lower 1367 [] S,муж,неод=(вин,мн|род,ед|им,мн) год 4 года none word
+none cyrillic lower 1372 ['asian_name'] CONJ= и 1 и none word
+none cyrillic lower 1374 [] V,пе=прош,ед,прич,кр,муж,сов,страд обвинять 7 обвинен none word
+none cyrillic lower 1382 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) в 1 в none word
+none cyrillic lower 1384 [] S,сред,неод=пр,ед создание 8 создании none word
+none cyrillic lower 1393 [] A=(пр,ед,полн,прев,жен|дат,ед,полн,прев,жен|род,ед,полн,прев,жен|твор,ед,полн,прев,жен) крупный 10 крупнейшей none word
+none cyrillic lower 1404 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) в 1 в none word
+none cyrillic lower 1406 [] S,жен,неод=(пр,ед|вин,мн|дат,ед|род,ед|им,мн) история 7 истории none word
+none cyrillic lower 1414 [] A=(пр,ед,полн,жен|дат,ед,полн,жен|род,ед,полн,жен|твор,ед,полн,жен) финансовый 10 финансовой none word
+none cyrillic lower 1425 ['LOC'] S,жен,неод=(вин,мн|род,ед|им,мн) пирамида 8 пирамиды none word
+none none none 1433 [] none none 1 . none punct
+none cyrillic capitalized 1435 ['LOC', 'asian_name'] PR= по 2 По none word
+none cyrillic lower 1438 [] A=(дат,мн,полн|твор,ед,полн,муж|твор,ед,полн,сред) разный 6 разным none word
+none cyrillic lower 1445 [] A,полн=(дат,мн|твор,ед,муж|твор,ед,сред) данный 6 данным none word
+none none none 1451 [] none none 1 , none punct
+none cyrillic lower 1453 [] S,жен,неод=твор,мн жертва 8 жертвами none word
+none cyrillic lower 1462 [] S,жен,неод=(вин,мн|род,ед|им,мн) афера 5 аферы none word
+none cyrillic lower 1468 [] V,нп=прош,мн,изъяв,сов становиться 5 стали none word
+none cyrillic lower 1474 ['LOC'] PR= от 2 от none word
+none cyrillic lower 1477 ['LOC'] APRO=(вин,ед,муж,од|род,ед,муж|род,ед,сред) один 6 одного none word
+none cyrillic lower 1484 ['LOC', 'asian_name'] PR= до 2 до none word
+none cyrillic lower 1487 [] NUM=(пр|род|вин,од) три 4 трех none word
+none cyrillic lower 1492 [] S,муж,неод=род,мн миллион 9 миллионов none word
+none cyrillic lower 1502 [] S,муж,од=(вин,мн|род,мн|им,ед) человек 7 человек none word
+none none none 1509 [] none none 1 , none punct
+none cyrillic lower 1511 [] PART= а 1 а none word
+none cyrillic lower 1513 [] ADV= также 5 также none word
+none cyrillic lower 1519 ['LOC'] S,муж,неод=(вин,ед|им,ед) ряд 3 ряд none word
+none cyrillic lower 1523 [] A=(пр,мн,полн|вин,мн,полн,од|род,мн,полн) крупный 7 крупных none word
+none cyrillic lower 1531 ['dict=PER_SURNAME'] S,муж,неод=род,мн банк 6 банков none word
+none cyrillic lower 1538 ['LOC', 'dict=PER_NAME'] S,муж,неод=род,ед мир 4 мира none word
+none none none 1542 [] none none 1 . none punct
+none cyrillic capitalized 1544 [] A,полн=(вин,ед,муж,од|род,ед,муж|род,ед,сред) бывший 7 Бывшего none word
+none cyrillic lower 1552 ['LOC', 'ident=PER', 'ident=PER'] S,жен,неод=вин,ед глава 5 главу none word
+none latin capitalized 1558 [] none Nasdaq 6 Nasdaq none word
+none cyrillic lower 1565 [] V=прош,мн,изъяв,сов отпускать 9 отпустили none word
+none cyrillic lower 1575 ['LOC'] PR= под 3 под none word
+none cyrillic lower 1579 ['LOC'] S,муж,неод=(вин,ед|им,ед) залог 5 залог none word
+none cyrillic lower 1585 [] S,сокр=(пр,мн|пр,ед|вин,мн|вин,ед|дат,мн|дат,ед|род,мн|род,ед|твор,мн|твор,ед|им,мн|им,ед) в 1 в none word
+is_digit cyrillic none 1587 [] none 10 2 10 none word
+none cyrillic lower 1590 [] S,муж,неод=род,мн миллион 9 миллионов none word
+none cyrillic lower 1600 [] S,муж,неод=род,мн доллар 8 долларов none word
+none cyrillic lower 1609 ['asian_name'] CONJ= и 1 и none word
+none cyrillic lower 1611 [] V=прош,мн,изъяв,сов помещать 9 поместили none word
+none cyrillic lower 1621 ['LOC'] PR= под 3 под none word
+none cyrillic lower 1625 ['LOC'] A=(вин,ед,полн,муж,неод|им,ед,полн,муж) домашний 8 домашний none word
+none cyrillic lower 1634 ['dict=PER_SURNAME'] S,муж,неод=(вин,ед|им,ед) арест 5 арест none word
+none none none 1639 [] none none 1 . none punct
+none none none 1643 [] none none 1 . none punct
