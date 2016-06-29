@@ -1,7 +1,7 @@
 # ner_recognition
 
 ## скрипт на языке Python 3 
-Скрипт запускается из консоли(файл Text_Processing.py)
+Скрипт запускается из консоли(файл main.py)
 
 параметры --input или -i - путь к папке с исходными текстами(абсолютный или относительный), значение по умолчанию ./texts/
 
@@ -10,11 +10,11 @@
 ## Примеры запуска
 Используем папки по умолчанию
 
-python3 Text_Processing.py
+python3 main.py
 
 Используем свои папки
 
-python3 Text_Processing.py -i /home/user/ner_rules/ner_recognition/test_set -o ./ner_results 
+python3 main.py -i /home/user/ner_rules/ner_recognition/test_set -o ./ner_results 
 
 В случае если в пути присутствует пробел необходимо взять путь в одинарные или двойные кавычки
 

@@ -12,9 +12,9 @@ import argparse
 def createParser ():
     parser = argparse.ArgumentParser()
     # Путь, где лежит коллекция текстов для соревнований
-    parser.add_argument ('-i', '--input', default='./testset/')
+    parser.add_argument ('-i', '--input', default='./texts/')
     # Папка с результатами
-    parser.add_argument ('-o', '--output', default='./result/')
+    parser.add_argument ('-o', '--output', default='./results/')
     return parser
 
 
@@ -22,7 +22,7 @@ def createParser ():
 if __name__ == '__main__':
     parser = createParser()
     namespace = parser.parse_args(sys.argv[1:])
-    input_path = namespace.input
+    input_path = namespace.input + '/'* (not namespace.input.endswith('/'))
     result_path = namespace.output
     if not os.path.exists(result_path):
         os.makedirs(result_path)
